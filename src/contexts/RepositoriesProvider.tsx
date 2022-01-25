@@ -61,6 +61,7 @@ function RepositoriesProvider({ children }: RepositoriesProviderProps) {
         issues
       }]);
     } catch (error) {
+      console.log(error);
       Alert.alert(
         "Erro",
         "Ocorreu um erro ao buscar pelo repositório. Verifique a sua conexão e o nome do repositório e tente novamente."
